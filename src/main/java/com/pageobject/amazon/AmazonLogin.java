@@ -64,9 +64,8 @@ public class AmazonLogin extends BaseClass {
 		
 	}
 	
-	public void deliverToAddress(){
+	public void verifyDeliverToAddress(){
 		WebDriverWaitUtils.waitElementToBeVisible(lbl_SelectAddress);
-		btn_DeliverAddress.click();
 		
 	}
 

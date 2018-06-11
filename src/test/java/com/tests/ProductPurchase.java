@@ -39,6 +39,6 @@ public class ProductPurchase extends BaseClass {
 		AmazonShopByCategory.selectProductCategory_TV_Appliances_Electronics();
 		AmazonCart.proceedToCheckOut();
 		AmazonLogin.login();
-		AmazonLogin.deliverToAddress();
+		AmazonLogin.verifyDeliverToAddress();
 	}
 }

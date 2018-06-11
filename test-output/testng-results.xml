@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AmazonSuite" duration-ms="357944" started-at="2018-06-11T19:26:20Z" finished-at="2018-06-11T19:32:18Z">
+  <suite name="AmazonSuite" duration-ms="314298" started-at="2018-06-11T19:36:35Z" finished-at="2018-06-11T19:41:49Z">
     <groups>
     </groups>
-    <test name="AmazonSuite" duration-ms="357944" started-at="2018-06-11T19:26:20Z" finished-at="2018-06-11T19:32:18Z">
+    <test name="AmazonSuite" duration-ms="314298" started-at="2018-06-11T19:36:35Z" finished-at="2018-06-11T19:41:49Z">
       <class name="com.tests.ProductPurchase">
-        <test-method status="PASS" signature="baseUpdate()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="baseUpdate" is-config="true" duration-ms="4679" started-at="2018-06-12T00:56:16Z" finished-at="2018-06-12T00:56:20Z">
+        <test-method status="PASS" signature="baseUpdate()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="baseUpdate" is-config="true" duration-ms="16003" started-at="2018-06-12T01:06:19Z" finished-at="2018-06-12T01:06:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseUpdate -->
-        <test-method status="PASS" signature="loadDevices()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="loadDevices" is-config="true" duration-ms="25933" started-at="2018-06-12T00:56:20Z" finished-at="2018-06-12T00:56:46Z">
+        <test-method status="PASS" signature="loadDevices()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="loadDevices" is-config="true" duration-ms="21754" started-at="2018-06-12T01:06:35Z" finished-at="2018-06-12T01:06:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadDevices -->
-        <test-method status="PASS" signature="purchaseProduct()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="purchaseProduct" duration-ms="328651" started-at="2018-06-12T00:56:46Z" finished-at="2018-06-12T01:02:15Z">
+        <test-method status="PASS" signature="purchaseProduct()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="purchaseProduct" duration-ms="289292" started-at="2018-06-12T01:06:57Z" finished-at="2018-06-12T01:11:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- purchaseProduct -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="afterMethod" is-config="true" duration-ms="3297" started-at="2018-06-12T01:02:15Z" finished-at="2018-06-12T01:02:18Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.tests.ProductPurchase@402a079c]" name="afterMethod" is-config="true" duration-ms="3236" started-at="2018-06-12T01:11:46Z" finished-at="2018-06-12T01:11:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

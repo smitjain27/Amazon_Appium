@@ -24,14 +24,20 @@ public class AmazonShopByCategory extends BaseClass {
 	@AndroidFindBy(xpath="//android.view.View[@text='Echo Dot ']") 
 	public WebElement Echo_Alexa_Echo_Dot ;
 	
+	@AndroidFindBy(xpath="//android.view.View[@text='Amazon Echo '][@index='2']") 
+	public WebElement Alexa_Echo ;
+		
 	@AndroidFindBy(xpath="//android.view.View[@text='Deliver to']") 
 	public WebElement DeliverTo ;
 	
-	@AndroidFindBy(xpath="//android.view.View[@text='Select your address']") 
-	public WebElement Select_your_address ;
+	@AndroidFindBy(xpath="//android.view.View[@text='Echo Devices ']") 
+	public WebElement lbl_EchoDevices ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='FREE Delivery']") 
 	public WebElement FREEDelivery ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Alexa See how it works']") 
+	public WebElement btnHowItWorks ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Add Accessories']") 
 	public WebElement Add_Accessories ;
@@ -49,6 +55,9 @@ public class AmazonShopByCategory extends BaseClass {
 
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Add to Cart']") 
 	public WebElement Add_To_Cart ;
+	
+	@AndroidFindBy(xpath="//android.widget.Button[@text='Add to Cart']") 
+	public WebElement Add_To_Cart_0 ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Kindle Store']") 
 	public WebElement category_Kindle_Store;
@@ -105,22 +114,19 @@ public class AmazonShopByCategory extends BaseClass {
 //		
 		setPincode();
 		// Swipe to find Add to Cart
-		if(count==1){
-			WebDriverWaitUtils.waitElementToBeVisible(DeliverTo);
-			touchActionSwipe(FREEDelivery,DeliverTo);
-		}else{
-		WebDriverWaitUtils.waitElementToBeVisible(Select_your_address);
-		touchActionSwipe(FREEDelivery,Select_your_address);
-		}
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lbl_EchoDevices);
+		touchActionSwipe(FREEDelivery,lbl_EchoDevices);
+		
 		WebDriverWaitUtils.waitElementToBeVisible(Add_Accessories);
-		touchActionSwipe(Add_Accessories,Color_Name);
+		touchActionSwipe(Add_Accessories,FREEDelivery);
 		
 		
 		//click on Add to cart
 		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
 		Add_To_Cart.click();
 		
-		
+		Thread.sleep(2000);
 		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
 		String CartCount1="0";
 		CartCount1=cartCount.getAttribute("text");
@@ -128,6 +134,40 @@ public class AmazonShopByCategory extends BaseClass {
 		
 		//Verify product added in the cart
 		Assert.assertEquals("1", CartCount1);
+		System.out.println("Product Added Successfully");
+			
+	}
+	
+	public void selectProduct2Category_Echo_Alexa() throws InterruptedException{
+		goToCategoryPage();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(category_Echo_Alexa);
+		category_Echo_Alexa.click();
+		WebDriverWaitUtils.waitElementToBeVisible(Alexa_Echo);
+		Alexa_Echo.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lbl_EchoDevices);
+		touchActionSwipe(btnHowItWorks,lbl_EchoDevices);
+		
+		//Hard wait as some other functionality perform intermittent
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeVisible(Add_Accessories);
+		touchActionSwipe(Add_Accessories,lbl_EchoDevices);
+		
+		
+		//click on Add to cart
+		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
+		Add_To_Cart.click();
+		
+		// Hard wait to update the cart count
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
+		String CartCount1="0";
+		CartCount1=cartCount.getAttribute("text");
+		System.out.println("Cart count value is: "+ CartCount1);
+		
+		//Verify product added in the cart
+		Assert.assertEquals("4", CartCount1);
 		System.out.println("Product Added Successfully");
 			
 	}
@@ -192,7 +232,7 @@ public class AmazonShopByCategory extends BaseClass {
 		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
 		Add_To_Cart.click();
 		
-		
+		Thread.sleep(2000);
 		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
 		String CartCount1="0";
 		CartCount1=cartCount.getAttribute("text");
@@ -222,7 +262,7 @@ public class AmazonShopByCategory extends BaseClass {
 		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
 		Add_To_Cart.click();
 		
-		
+		Thread.sleep(4000);
 		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
 		String CartCount1="0";
 		CartCount1=cartCount.getAttribute("text");
@@ -283,14 +323,14 @@ public class AmazonShopByCategory extends BaseClass {
 		WebDriverWaitUtils.waitElementToBeVisible(sizeTV);
 		touchActionSwipe(sizeTV, DeliverTo);
 		
-		WebDriverWaitUtils.waitElementToBeVisible(Inclusive_of_all_taxes);
+		WebDriverWaitUtils.waitElementToBeVisible(sizeTV);
 		touchActionSwipe(Inclusive_of_all_taxes, sizeTV);
 		
 		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
-		Add_To_Cart.click();
+		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart_0);
+		Add_To_Cart_0.click();
 		
-		
+		Thread.sleep(5000);
 		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
 		String CartCount1="0";
 		CartCount1=cartCount.getAttribute("text");

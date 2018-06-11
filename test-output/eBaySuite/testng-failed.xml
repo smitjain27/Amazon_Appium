@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [eBaySuite]">
+  <test name="eBayTest(failed)">
+    <classes>
+      <class name="com.tests.ProductPurchase">
+        <methods>
+          <include name="loadDevices"/>
+          <include name="baseUpdate"/>
+          <include name="afterMethod"/>
+          <include name="purchaseProduct"/>
+        </methods>
+      </class> <!-- com.tests.ProductPurchase -->
+    </classes>
+  </test> <!-- eBayTest(failed) -->
+</suite> <!-- Failed suite [eBaySuite] -->

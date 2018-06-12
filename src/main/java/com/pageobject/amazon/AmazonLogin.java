@@ -37,7 +37,7 @@ public class AmazonLogin extends BaseClass {
 	
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@resource-id='signInSubmit']") 
-	public WebElement signInSubmit ;
+	public WebElement btnSignInSubmit ;
 	
 	
 	public AmazonLogin() throws Exception {
@@ -58,8 +58,8 @@ public class AmazonLogin extends BaseClass {
 		inputFieldPassword.clear();
 		inputFieldPassword.sendKeys("0123neha");
 		
-		WebDriverWaitUtils.waitElementToBeVisible(signInSubmit);
-		signInSubmit.click();
+		WebDriverWaitUtils.waitElementToBeVisible(btnSignInSubmit);
+		btnSignInSubmit.click();
 		
 		
 	}

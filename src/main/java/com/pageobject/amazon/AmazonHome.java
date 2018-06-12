@@ -16,16 +16,16 @@ public class AmazonHome extends BaseClass {
 
 
 	@AndroidFindBy(id="web_home_shop_by_department_label") 
-	public WebElement shopByCategory_Label;
+	public WebElement lblShopByCategory_Label;
 	
 	@AndroidFindBy(id="action_bar_burger_icon") 
-	public WebElement actionBurgerIcon;
+	public WebElement btnActionBurgerIcon;
 	
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Shop by Category']") 
-	public WebElement leftSideShobByCategory;
+	public WebElement lblLeftSideShobByCategory;
 	
 	@AndroidFindBy(id="action_bar_cart_count") 
-	public WebElement cartCount;
+	public WebElement lblCartCount;
 
 	
 	public AmazonHome() throws Exception {
@@ -33,8 +33,8 @@ public class AmazonHome extends BaseClass {
 	}
 	
 	public void clickShopByCategory(){
-		WebDriverWaitUtils.waitElementToBeVisible(shopByCategory_Label);
-		shopByCategory_Label.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lblShopByCategory_Label);
+		lblShopByCategory_Label.click();
 	}
 	
 	

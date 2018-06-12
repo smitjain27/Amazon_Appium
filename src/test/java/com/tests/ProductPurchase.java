@@ -29,7 +29,7 @@ public class ProductPurchase extends BaseClass {
 		AmazonCart = new AmazonCart();
 		AmazonLogin = new AmazonLogin();
 		
-		WebDriverWaitUtils.waitElementToBeVisible(AmazonFront.skipSignIn);
+		WebDriverWaitUtils.waitElementToBeVisible(AmazonFront.btnSkipSignIn);
 		AmazonFront.clickSkip_Sign_In();
 		AmazonHome.clickShopByCategory();
 		AmazonShopByCategory.selectProductCategory_Echo_Alexa();

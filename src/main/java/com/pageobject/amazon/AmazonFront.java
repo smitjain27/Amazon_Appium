@@ -16,17 +16,17 @@ public class AmazonFront extends BaseClass {
 
 
 	@AndroidFindBy(id="sign_in_button") 
-	public WebElement signInID;
+	public WebElement btnSignInID;
 	@AndroidFindBy(id="skip_sign_in_button") 
-	public WebElement skipSignIn;
+	public WebElement btnSkipSignIn;
 	
 	public AmazonFront() throws Exception {
 		PageFactory.initElements(new AppiumFieldDecorator(driver, 10, TimeUnit.SECONDS), this);
 	}
 	
 	public void clickSkip_Sign_In(){
-		WebDriverWaitUtils.waitElementToBeVisible(skipSignIn);
-		skipSignIn.click();
+		WebDriverWaitUtils.waitElementToBeVisible(btnSkipSignIn);
+		btnSkipSignIn.click();
 	}
 	
 	

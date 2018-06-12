@@ -19,86 +19,86 @@ import com.test.amazon.android.WebDriverWaitUtils;
 public class AmazonShopByCategory extends BaseClass {
 
 	@AndroidFindBy(xpath="//android.view.View[@text='Echo & Alexa']") 
-	public WebElement category_Echo_Alexa;
+	public WebElement lbl_Category_Echo_Alexa;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Echo Dot ']") 
-	public WebElement Echo_Alexa_Echo_Dot ;
+	public WebElement lbl_Echo_Alexa_Echo_Dot ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Amazon Echo '][@index='2']") 
-	public WebElement Alexa_Echo ;
+	public WebElement lbl_Alexa_Echo ;
 		
 	@AndroidFindBy(xpath="//android.view.View[@text='Deliver to']") 
-	public WebElement DeliverTo ;
+	public WebElement lblDeliverTo ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Echo Devices ']") 
 	public WebElement lbl_EchoDevices ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='FREE Delivery']") 
-	public WebElement FREEDelivery ;
+	public WebElement lblFREEDelivery ;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Alexa See how it works']") 
 	public WebElement btnHowItWorks ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Add Accessories']") 
-	public WebElement Add_Accessories ;
+	public WebElement lblAdd_Accessories ;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Color Name: Black ']") 
-	public WebElement Color_Name ;
+	public WebElement btnColor_Name ;
 	
 	
 	@AndroidFindBy(id="loc_ux_gps_enter_pincode") 
-	public static WebElement EnterPinCode;
+	public static WebElement lblEnterPinCode;
 	@AndroidFindBy(id="loc_ux_pin_code_text_pt1") 
-	public static WebElement PinCode_Input_field;
+	public static WebElement inputPinCode_Input_field;
 	@AndroidFindBy(id="loc_ux_update_pin_code") 
-	public static WebElement UpdatePinCode;
+	public static WebElement btnUpdatePinCode;
 
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Add to Cart']") 
-	public WebElement Add_To_Cart ;
+	public WebElement btnAdd_To_Cart ;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Add to Cart']") 
-	public WebElement Add_To_Cart_0 ;
+	public WebElement btnAdd_To_Cart_0 ;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Kindle Store']") 
-	public WebElement category_Kindle_Store;
+	public WebElement btnCategory_Kindle_Store;
 	@AndroidFindBy(xpath="//android.view.View[@text='Kindle E-Readers ']") 
-	public WebElement kindle_eReader;
+	public WebElement lblKindle_eReader;
 	@AndroidFindBy(xpath="//android.view.View[contains(@text, 'High Resolution Display (300 ppi) with Built-in Light, Wi-Fi by Amazon ₹10,999')]") 
-	public WebElement kindle_Product1;
+	public WebElement lblKindle_Product1;
 	@AndroidFindBy(xpath="//android.view.View[@text='Inclusive of all taxes']") 
-	public WebElement Inclusive_of_all_taxes;
+	public WebElement lblInclusive_of_all_taxes;
 	@AndroidFindBy(xpath="//android.view.View[@text='NuPro Slim Fitted Cover for Kindle Paperwhite - black (Black)    1,299 ']") 
-	public WebElement Add_Additional_Items;
+	public WebElement lblAdd_Additional_Items;
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Mobiles, Computers'][@index='1']") 
-	public WebElement category_Mobiles_Computers;
+	public WebElement btnCategory_Mobiles_Computers;
 	@AndroidFindBy(xpath="//android.view.View[@text='Mobiles ']") 
-	public WebElement Mobiles;
+	public WebElement lblMobiles;
 	@AndroidFindBy(xpath="//android.view.View[@text='OnePlus 6']") 
-	public WebElement OnePlus6;
+	public WebElement lblOnePlus6;
 	@AndroidFindBy(xpath="//android.view.View[@text='Without Exchange ₹ 34,999']") 
-	public WebElement withOutExchange;
+	public WebElement lblWithOutExchange;
 	
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='TV, Appliances, Electronics'][@index='1']") 
-	public WebElement category_TV_Appliances_Electronics;
+	public WebElement btnCategory_TV_Appliances_Electronics;
 	@AndroidFindBy(xpath="//android.view.View[@text='Televisions ']") 
-	public WebElement Televisions;
+	public WebElement btnTelevisions;
 	@AndroidFindBy(xpath="//android.view.View[@text='Sanyo 80 cm (32 inches) XT-32S7000H HD Ready LED TV (Black)']") 
-	public WebElement selectTelevision;
+	public WebElement lblSelectTelevision;
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Size name: 32 inches ']") 
-	public WebElement sizeTV;
+	public WebElement lblSizeTV;
 	
 	
 	@AndroidFindBy(xpath="//android.view.View[@text='Amazon Fire TV Stick ']") 
-	public WebElement category_Amazon_Fire_TV_Stick ;
+	public WebElement btnCategory_Amazon_Fire_TV_Stick ;
 	
 	@AndroidFindBy(id="action_bar_burger_icon") 
-	public static WebElement actionBurgerIcon;
+	public static WebElement lblActionBurgerIcon;
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='Shop by Category']") 
-	public static WebElement leftSideShobByCategory;
+	public static WebElement lblleftSideShobByCategory;
 	@AndroidFindBy(id="action_bar_cart_count") 
-	public WebElement cartCount;
+	public WebElement lblCartCount;
 	
 	public static int count=0;
 	
@@ -107,29 +107,29 @@ public class AmazonShopByCategory extends BaseClass {
 	}
 	
 	public void selectProductCategory_Echo_Alexa() throws InterruptedException{
-		WebDriverWaitUtils.waitElementToBeVisible(category_Echo_Alexa);
-		category_Echo_Alexa.click();
-		WebDriverWaitUtils.waitElementToBeVisible(Echo_Alexa_Echo_Dot);
-		Echo_Alexa_Echo_Dot.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lbl_Category_Echo_Alexa);
+		lbl_Category_Echo_Alexa.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lbl_Echo_Alexa_Echo_Dot);
+		lbl_Echo_Alexa_Echo_Dot.click();
 //		
 		setPincode();
 		// Swipe to find Add to Cart
 		
 		WebDriverWaitUtils.waitElementToBeVisible(lbl_EchoDevices);
-		touchActionSwipe(FREEDelivery,lbl_EchoDevices);
+		touchActionSwipe(lblFREEDelivery,lbl_EchoDevices);
 		
-		WebDriverWaitUtils.waitElementToBeVisible(Add_Accessories);
-		touchActionSwipe(Add_Accessories,FREEDelivery);
+		WebDriverWaitUtils.waitElementToBeVisible(lblAdd_Accessories);
+		touchActionSwipe(lblAdd_Accessories,lblFREEDelivery);
 		
 		
 		//click on Add to cart
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
-		Add_To_Cart.click();
+		WebDriverWaitUtils.waitElementToBeClickable(btnAdd_To_Cart);
+		btnAdd_To_Cart.click();
 		
 		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
+		WebDriverWaitUtils.waitElementToBeVisible(lblCartCount);
 		String CartCount1="0";
-		CartCount1=cartCount.getAttribute("text");
+		CartCount1=lblCartCount.getAttribute("text");
 		System.out.println("Cart count value is: "+ CartCount1);
 		
 		//Verify product added in the cart
@@ -141,29 +141,29 @@ public class AmazonShopByCategory extends BaseClass {
 	public void selectProduct2Category_Echo_Alexa() throws InterruptedException{
 		goToCategoryPage();
 		
-		WebDriverWaitUtils.waitElementToBeVisible(category_Echo_Alexa);
-		category_Echo_Alexa.click();
-		WebDriverWaitUtils.waitElementToBeVisible(Alexa_Echo);
-		Alexa_Echo.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lbl_Category_Echo_Alexa);
+		lbl_Category_Echo_Alexa.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lbl_Alexa_Echo);
+		lbl_Alexa_Echo.click();
 		
 		WebDriverWaitUtils.waitElementToBeVisible(lbl_EchoDevices);
 		touchActionSwipe(btnHowItWorks,lbl_EchoDevices);
 		
 		//Hard wait as some other functionality perform intermittent
 		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeVisible(Add_Accessories);
-		touchActionSwipe(Add_Accessories,lbl_EchoDevices);
+		WebDriverWaitUtils.waitElementToBeVisible(lblAdd_Accessories);
+		touchActionSwipe(lblAdd_Accessories,lbl_EchoDevices);
 		
 		
 		//click on Add to cart
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
-		Add_To_Cart.click();
+		WebDriverWaitUtils.waitElementToBeClickable(btnAdd_To_Cart);
+		btnAdd_To_Cart.click();
 		
 		// Hard wait to update the cart count
 		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
+		WebDriverWaitUtils.waitElementToBeVisible(lblCartCount);
 		String CartCount1="0";
-		CartCount1=cartCount.getAttribute("text");
+		CartCount1=lblCartCount.getAttribute("text");
 		System.out.println("Cart count value is: "+ CartCount1);
 		
 		//Verify product added in the cart
@@ -172,22 +172,157 @@ public class AmazonShopByCategory extends BaseClass {
 			
 	}
 	
-	public static void touchActionSwipe(WebElement el1, WebElement el2){
-		TouchAction ta = new TouchAction(driver);
-		ta.press(el1).moveTo(el2).release().perform();
+		
+	public static void goToCategoryPage(){
+		WebDriverWaitUtils.waitElementToBeVisible(lblActionBurgerIcon);
+		lblActionBurgerIcon.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lblleftSideShobByCategory);
+		lblleftSideShobByCategory.click();
+	}
+	
+	public void selectProductCategory_Kindle_Store() throws InterruptedException{
+		goToCategoryPage();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(btnCategory_Kindle_Store);
+		btnCategory_Kindle_Store.click();
+		WebDriverWaitUtils.waitElementToBeVisible(lblKindle_eReader);
+		lblKindle_eReader.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblKindle_Product1);
+		lblKindle_Product1.click();
+		
+		setPincode();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblDeliverTo);
+		touchActionSwipe(lblInclusive_of_all_taxes,lblDeliverTo);
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblAdd_Additional_Items);
+		touchActionSwipe(lblAdd_Additional_Items,lblInclusive_of_all_taxes);
+		
+		//click on Add to cart
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeClickable(btnAdd_To_Cart);
+		btnAdd_To_Cart.click();
+		
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeVisible(lblCartCount);
+		String CartCount1="0";
+		CartCount1=lblCartCount.getAttribute("text");
+		System.out.println("Cart count value is: "+ CartCount1);
+		
+		//Verify product added in the cart
+		Assert.assertEquals("2", CartCount1);
+		System.out.println("Product Added Successfully");
+			
+	}
+	
+	public void selectProductCategory_Amazon_Fire_TV_Stick() throws InterruptedException{
+		goToCategoryPage();
+		
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeVisible(btnCategory_Amazon_Fire_TV_Stick);
+		btnCategory_Amazon_Fire_TV_Stick.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblDeliverTo);
+		touchActionSwipe(lblFREEDelivery,lblDeliverTo);
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblFREEDelivery);
+		touchActionSwipe(lblAdd_Accessories,lblFREEDelivery);
+		
+		//click on Add to cart
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeClickable(btnAdd_To_Cart);
+		btnAdd_To_Cart.click();
+		
+		Thread.sleep(4000);
+		WebDriverWaitUtils.waitElementToBeVisible(lblCartCount);
+		String CartCount1="0";
+		CartCount1=lblCartCount.getAttribute("text");
+		System.out.println("Cart count value is: "+ CartCount1);
+		
+		//Verify product added in the cart
+		Assert.assertEquals("3", CartCount1);
+		System.out.println("Product Added Successfully");
+	}
+	
+	public void selectProductCategory_Mobiles_Computers() throws InterruptedException{
+		goToCategoryPage(); 
+		
+		WebDriverWaitUtils.waitElementToBeVisible(btnCategory_Mobiles_Computers);
+		btnCategory_Mobiles_Computers.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblMobiles);
+		lblMobiles.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblOnePlus6);
+		lblOnePlus6.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblFREEDelivery);
+		touchActionSwipe(lblFREEDelivery, lblDeliverTo);
+		
+		Thread.sleep(5000);
+		WebDriverWaitUtils.waitElementToBeVisible(lblFREEDelivery);
+		touchActionSwipe(lblWithOutExchange, lblFREEDelivery);
+		
+		Thread.sleep(5000);
+		WebDriverWaitUtils.waitElementToBeClickable(btnAdd_To_Cart);
+		btnAdd_To_Cart.click();
+		
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblCartCount);
+		String CartCount1="0";
+		CartCount1=lblCartCount.getAttribute("text");
+		System.out.println("Cart count value is: "+ CartCount1);
+		
+		//Verify product added in the cart
+		Assert.assertEquals("4", CartCount1);
+		System.out.println("Product Added Successfully");
+	}
+	
+	public void selectProductCategory_TV_Appliances_Electronics() throws InterruptedException{
+		goToCategoryPage();
+		
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeVisible(btnCategory_TV_Appliances_Electronics);
+		btnCategory_TV_Appliances_Electronics.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(btnTelevisions);
+		btnTelevisions.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblSelectTelevision);
+		lblSelectTelevision.click();
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblSizeTV);
+		touchActionSwipe(lblSizeTV, lblDeliverTo);
+		
+		WebDriverWaitUtils.waitElementToBeVisible(lblSizeTV);
+		touchActionSwipe(lblInclusive_of_all_taxes, lblSizeTV);
+		
+		Thread.sleep(2000);
+		WebDriverWaitUtils.waitElementToBeClickable(btnAdd_To_Cart_0);
+		btnAdd_To_Cart_0.click();
+		
+		Thread.sleep(5000);
+		WebDriverWaitUtils.waitElementToBeVisible(lblCartCount);
+		String CartCount1="0";
+		CartCount1=lblCartCount.getAttribute("text");
+		System.out.println("Cart count value is: "+ CartCount1);
+		
+		//Verify product added in the cart
+		Assert.assertEquals("5", CartCount1);
+		System.out.println("Product Added Successfully");
 	}
 	
 	public static void setPincode(){
 		if(count==0){
 			for(int i=1; i<=2; i++){
 				try{
-					WebDriverWaitUtils.waitElementToBeVisible(EnterPinCode);
-					EnterPinCode.click();
-					WebDriverWaitUtils.waitElementToBeVisible(PinCode_Input_field);
-					PinCode_Input_field.clear();
-		//			PinCode_Input_field.click();
-					PinCode_Input_field.sendKeys("560076");
-					UpdatePinCode.click();
+					WebDriverWaitUtils.waitElementToBeVisible(lblEnterPinCode);
+					lblEnterPinCode.click();
+					WebDriverWaitUtils.waitElementToBeVisible(inputPinCode_Input_field);
+					inputPinCode_Input_field.clear();
+					inputPinCode_Input_field.sendKeys("560076");
+					btnUpdatePinCode.click();
 					count=count+1;
 				}
 				catch(Exception e){
@@ -201,147 +336,10 @@ public class AmazonShopByCategory extends BaseClass {
 		
 	}
 	
-	public static void goToCategoryPage(){
-		WebDriverWaitUtils.waitElementToBeVisible(actionBurgerIcon);
-		actionBurgerIcon.click();
-		WebDriverWaitUtils.waitElementToBeVisible(leftSideShobByCategory);
-		leftSideShobByCategory.click();
+	public static void touchActionSwipe(WebElement el1, WebElement el2){
+		TouchAction ta = new TouchAction(driver);
+		ta.press(el1).moveTo(el2).release().perform();
 	}
-	
-	public void selectProductCategory_Kindle_Store() throws InterruptedException{
-		goToCategoryPage();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(category_Kindle_Store);
-		category_Kindle_Store.click();
-		WebDriverWaitUtils.waitElementToBeVisible(kindle_eReader);
-		kindle_eReader.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(kindle_Product1);
-		kindle_Product1.click();
-		
-		setPincode();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(DeliverTo);
-		touchActionSwipe(Inclusive_of_all_taxes,DeliverTo);
-		
-		WebDriverWaitUtils.waitElementToBeVisible(Add_Additional_Items);
-		touchActionSwipe(Add_Additional_Items,Inclusive_of_all_taxes);
-		
-		//click on Add to cart
-		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
-		Add_To_Cart.click();
-		
-		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
-		String CartCount1="0";
-		CartCount1=cartCount.getAttribute("text");
-		System.out.println("Cart count value is: "+ CartCount1);
-		
-		//Verify product added in the cart
-		Assert.assertEquals("2", CartCount1);
-		System.out.println("Product Added Successfully");
-			
-	}
-	
-	public void selectProductCategory_Amazon_Fire_TV_Stick() throws InterruptedException{
-		goToCategoryPage();
-		
-		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeVisible(category_Amazon_Fire_TV_Stick);
-		category_Amazon_Fire_TV_Stick.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(DeliverTo);
-		touchActionSwipe(FREEDelivery,DeliverTo);
-		
-		WebDriverWaitUtils.waitElementToBeVisible(FREEDelivery);
-		touchActionSwipe(Add_Accessories,FREEDelivery);
-		
-		//click on Add to cart
-		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
-		Add_To_Cart.click();
-		
-		Thread.sleep(4000);
-		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
-		String CartCount1="0";
-		CartCount1=cartCount.getAttribute("text");
-		System.out.println("Cart count value is: "+ CartCount1);
-		
-		//Verify product added in the cart
-		Assert.assertEquals("3", CartCount1);
-		System.out.println("Product Added Successfully");
-	}
-	
-	public void selectProductCategory_Mobiles_Computers() throws InterruptedException{
-		goToCategoryPage(); 
-		
-		WebDriverWaitUtils.waitElementToBeVisible(category_Mobiles_Computers);
-		category_Mobiles_Computers.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(Mobiles);
-		Mobiles.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(OnePlus6);
-		OnePlus6.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(FREEDelivery);
-		touchActionSwipe(FREEDelivery, DeliverTo);
-		
-		Thread.sleep(5000);
-		WebDriverWaitUtils.waitElementToBeVisible(FREEDelivery);
-		touchActionSwipe(withOutExchange, FREEDelivery);
-		
-		Thread.sleep(5000);
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart);
-		Add_To_Cart.click();
-		
-		
-		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
-		String CartCount1="0";
-		CartCount1=cartCount.getAttribute("text");
-		System.out.println("Cart count value is: "+ CartCount1);
-		
-		//Verify product added in the cart
-		Assert.assertEquals("4", CartCount1);
-		System.out.println("Product Added Successfully");
-	}
-	
-	public void selectProductCategory_TV_Appliances_Electronics() throws InterruptedException{
-		goToCategoryPage();
-		
-		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeVisible(category_TV_Appliances_Electronics);
-		category_TV_Appliances_Electronics.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(Televisions);
-		Televisions.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(selectTelevision);
-		selectTelevision.click();
-		
-		WebDriverWaitUtils.waitElementToBeVisible(sizeTV);
-		touchActionSwipe(sizeTV, DeliverTo);
-		
-		WebDriverWaitUtils.waitElementToBeVisible(sizeTV);
-		touchActionSwipe(Inclusive_of_all_taxes, sizeTV);
-		
-		Thread.sleep(2000);
-		WebDriverWaitUtils.waitElementToBeClickable(Add_To_Cart_0);
-		Add_To_Cart_0.click();
-		
-		Thread.sleep(5000);
-		WebDriverWaitUtils.waitElementToBeVisible(cartCount);
-		String CartCount1="0";
-		CartCount1=cartCount.getAttribute("text");
-		System.out.println("Cart count value is: "+ CartCount1);
-		
-		//Verify product added in the cart
-		Assert.assertEquals("5", CartCount1);
-		System.out.println("Product Added Successfully");
-	}
-	
-	
 	
 
 }

@@ -16,7 +16,7 @@ import com.test.amazon.android.WebDriverWaitUtils;
 public class AmazonCart extends BaseClass {
 
 
-	@AndroidFindBy(xpath="//android.view.View[@text='Cart Subtotal (5 items): ']") 
+	@AndroidFindBy(xpath="//android.view.View[@text='Cart Subtotal (4 items): ']") 
 	public WebElement lbl_Total_Cart_Items ;
 	
 	@AndroidFindBy(xpath="//android.widget.Button[@text='Proceed to Checkout']") 

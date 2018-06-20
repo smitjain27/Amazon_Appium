@@ -112,7 +112,7 @@ public class AmazonShopByCategory extends BaseClass {
 		WebDriverWaitUtils.waitElementToBeVisible(lbl_Echo_Alexa_Echo_Dot);
 		lbl_Echo_Alexa_Echo_Dot.click();
 //		
-		setPincode();
+//		setPincode();
 		// Swipe to find Add to Cart
 		
 		WebDriverWaitUtils.waitElementToBeVisible(lbl_EchoDevices);

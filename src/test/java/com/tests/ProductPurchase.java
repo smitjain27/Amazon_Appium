@@ -36,7 +36,7 @@ public class ProductPurchase extends BaseClass {
 		AmazonShopByCategory.selectProductCategory_Kindle_Store();
 		AmazonShopByCategory.selectProductCategory_Amazon_Fire_TV_Stick();
 		AmazonShopByCategory.selectProduct2Category_Echo_Alexa();
-		AmazonShopByCategory.selectProductCategory_TV_Appliances_Electronics();
+//		AmazonShopByCategory.selectProductCategory_TV_Appliances_Electronics();
 		AmazonCart.proceedToCheckOut();
 		AmazonLogin.login();
 		AmazonLogin.verifyDeliverToAddress();
